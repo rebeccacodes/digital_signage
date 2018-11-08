@@ -1,9 +1,19 @@
-h1 {
-    color: red;
-}
-
 .home {
     text-align: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .go {
+      height: 50px;
+      width: 50px;
+      border-radius: 3px;
+      border-color: white;
+      border-width: 1px;
+      background-color: #d8f800;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
   }
   
  

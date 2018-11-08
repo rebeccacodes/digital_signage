@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Route, withRouter } from 'react-router-dom';
-import { Switch } from 'react-router-dom'
+import { Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 import Home from './components/home';
+import Login from './components/login';
 
 class App extends Component {
   render() {
@@ -10,6 +10,7 @@ class App extends Component {
       <div className="container">
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route path='/login' component={Login} />
         </Switch>
       </div>
     );

@@ -1,6 +1,8 @@
 import React from 'react';
 import './home.css';
 import Header from '../header';
+import { Link } from 'react-router-dom';
+
 
 export default () => {
     return (
@@ -15,7 +17,7 @@ export default () => {
                 <option value="reno">Reno</option>
             </select>
 
-            <input type="submit" value="Submit" />
+            <Link to="/login"> <input class="go" type="submit" value="GO" /> </Link>
 
         </div>
     )
