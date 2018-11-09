@@ -11,18 +11,11 @@ export default () => {
                     <i className="fa fa-caret-down"></i>
                 </button>
                 <div className="dropdown-content">
-                    <Link to='/'>TEXT BOARDS</Link>
-                    <Link to='/'>ESCAPE ROOM TEASERS</Link>
+                    <Link to='/lobby-boards'>TEXT BOARDS</Link>
+                    <Link to='/teasers'>ESCAPE ROOM TEASERS</Link>
                 </div >
             </div >
-            <div className="dropdown">
-                <button className="dropbtn">CLASSROOMS
-                     <i className="fa fa-caret-down"></i>
-                </button>
-                <div className="dropdown-content">
-                    <Link to='/'>ESCAPE ROOMS</Link>
-                </div>
-            </div >
+            <Link to='/classrooms'>CLASSROOMS</Link>
             <Link to='/'>LOGOUT</Link>
         </div >
     )
