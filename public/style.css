@@ -66,3 +66,8 @@ select {
   z-index: -1;  
 }
 
+.heading-links {
+    text-decoration: none;
+    color: red;
+}
+

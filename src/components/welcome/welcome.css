@@ -1,0 +1,17 @@
+.welcome {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .classroom-main, .lobby-main {
+    display: inline-block;
+    width: 45%;
+    height: 25vh;
+    margin: 2%;
+    background-color: black;
+  }
+
+  .city {
+    color: #d8f800;
+  }
