@@ -6,6 +6,8 @@ import Login from './components/login';
 import Welcome from './components/welcome';
 import Classrooms from './components/classrooms';
 import Lobby from './components/lobby';
+import LobbyBoards from './components/lobby-boards';
+import Teasers from './components/escape-room-teasers';
 
 class App extends Component {
   render() {
@@ -17,6 +19,8 @@ class App extends Component {
           <Route path='/welcome' component={Welcome} />
           <Route path='/classrooms' component={Classrooms} />
           <Route path='/lobby' component={Lobby} />
+          <Route path='/lobby-boards' component={LobbyBoards} />
+          <Route path='/teasers' component={Teasers} />
         </Switch>
       </div>
     );

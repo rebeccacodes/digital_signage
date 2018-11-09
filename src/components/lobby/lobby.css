@@ -4,3 +4,11 @@
     margin: 0 auto;
 }
 
+.view {
+    display: inline-block;
+    width: 45%;
+    height: 25vh;
+    margin: 2%;
+    background-color: black;
+  }
+
