@@ -1,6 +1,7 @@
 import React from 'react';
 import './login.css';
 import Header from '../header';
+import { Link } from 'react-router-dom';
 
 
 export default () => {
@@ -12,7 +13,7 @@ export default () => {
             <input type="text" name="" id="" placeholder="Enter Your User Id" />
             <input type="password" name="" id="" placeholder="Enter Your Password" />
 
-            <input class="login-btn" type="submit" value="SUBMIT" />
+            <Link to='/welcome'> <input class="login-btn" type="submit" value="SUBMIT" /></Link>
 
         </div>
     )
