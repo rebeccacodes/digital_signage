@@ -8,8 +8,9 @@
 
 .teaser {
     display: inline-block;
+    vertical-align: top;
     width: 25%;
-    height: 25vh;
+    min-height: 25vh;
     background-color: black;
     color: white;
     margin: 2%;
