@@ -8,6 +8,12 @@ import Classrooms from './components/classrooms';
 import Lobby from './components/lobby';
 import LobbyBoards from './components/lobby-boards';
 import Teasers from './components/escape-room-teasers';
+import AddClassroom from './components/add-classroom';
+import SetLobbyTV from './components/set-lobby-tv';
+import SetClassroomTV from './components/set-classroom-tv';
+import LobbyTV from './components/lobby-tv';
+import ClassroomTV from './components/classroom-tv';
+
 
 class App extends Component {
   render() {
@@ -21,6 +27,11 @@ class App extends Component {
           <Route path='/lobby' component={Lobby} />
           <Route path='/lobby-boards' component={LobbyBoards} />
           <Route path='/teasers' component={Teasers} />
+          <Route path='/new-classroom' component={AddClassroom} />
+          <Route path='/set-lobby-tv' component={SetLobbyTV} />
+          <Route path='/set-classroom-tv' component={SetClassroomTV} />
+          <Route path='/lobby-tv' component={LobbyTV} />
+          <Route path='/classroom-tv' component={ClassroomTV} />
         </Switch>
       </div>
     );

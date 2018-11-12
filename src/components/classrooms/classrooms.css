@@ -14,7 +14,7 @@
     margin: 2%;
 }
 
-.edit-classroom {
+.edit-classroom, .delete-classroom {
     color: #d8f800;
     font-weight: 600;
     float: right;

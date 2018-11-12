@@ -14,6 +14,7 @@ export default () => {
             <input type="password" name="" id="" placeholder="Enter Your Password" />
 
             <Link to='/welcome'> <input class="login-btn" type="submit" value="SUBMIT" /></Link>
+            <Link to='/' className="heading-links"> <div className="text-link">BACK</div></Link>
 
         </div>
     )
