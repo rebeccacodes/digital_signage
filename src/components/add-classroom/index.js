@@ -14,7 +14,8 @@ export default () => {
                 <input type="text" name="classroom-youtube-link" id="classroom-youtube-link" placeholder="YouTube Link" />
                 <div>
                     <Link to="/classrooms" className="add-btn">BACK</Link>
-                    <button className="add-btn">ADD CLASSROOM</button></div>
+                    <button className="add-btn">ADD CLASSROOM</button>
+                </div>
             </form>
         </div>
     )

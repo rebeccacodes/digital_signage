@@ -13,6 +13,8 @@ import SetLobbyTV from './components/set-lobby-tv';
 import SetClassroomTV from './components/set-classroom-tv';
 import LobbyTV from './components/lobby-tv';
 import ClassroomTV from './components/classroom-tv';
+import NewLobbyBoard from './components/add-lobby-board';
+import NewTeaser from './components/add-teaser';
 
 
 class App extends Component {
@@ -32,6 +34,8 @@ class App extends Component {
           <Route path='/set-classroom-tv' component={SetClassroomTV} />
           <Route path='/lobby-tv' component={LobbyTV} />
           <Route path='/classroom-tv' component={ClassroomTV} />
+          <Route path='/new-lobby-board' component={NewLobbyBoard} />
+          <Route path='/new-teaser' component={NewTeaser} />
         </Switch>
       </div>
     );

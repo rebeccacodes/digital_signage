@@ -4,13 +4,20 @@
     margin: 0 auto;
 }
 
-
-
 .lobby-board {
     display: inline-block;
     width: 25%;
-    height: 25vh;
+    min-height: 25vh;
     background-color: black;
     color: white;
     margin: 2%;
+    vertical-align: top;
+}
+
+.edit-lobby, .delete-lobby {
+    color: #d8f800;
+    font-weight: 600;
+    float: right;
+    margin-right: 2%;
+    margin-bottom: 2%;
 }
