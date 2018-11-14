@@ -24,7 +24,6 @@ class Home extends Component {
     }
 
     render() {
-        console.log('test:', this.state.location);
         return (
             <div>
                 <Header />
@@ -32,9 +31,9 @@ class Home extends Component {
                 <h2>Content Management System</h2>
                 <select name="location" value={this.state.location} onChange={this.handleChange}>
                     <option value="null">Choose Your Location</option>
-                    <option value="irvine">Irvine</option>
-                    <option value="lake forest">Lake Forest</option>
-                    <option value="reno">Reno</option>
+                    <option value="Irvine">Irvine</option>
+                    <option value="LakeForest">Lake Forest</option>
+                    <option value="Reno">Reno</option>
                 </select>
 
                 <Link to="/welcome"> <input className="go" type="submit" value="GO" onClick={(event) => { this.handleSubmit(event) }} /></Link>
