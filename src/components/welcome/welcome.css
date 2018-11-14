@@ -1,15 +1,21 @@
-.welcome {
-    text-align: center;
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  .classroom-main, .lobby-main {
+  .outer {
     display: inline-block;
     width: 45%;
-    height: 25vh;
+    position: relative;
+    min-height: 25vh;
+    height: 100%;
     margin: 2%;
     background-color: black;
+  }
+
+  .center {
+    width: 75%;
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+   
   }
 
   .city {

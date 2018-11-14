@@ -1,15 +1,16 @@
 import React from 'react';
 import './login.css';
-import Header from '../header';
+import Header2 from '../header2';
 import { Link } from 'react-router-dom';
 
 
 export default () => {
     return (
-        <div className="login">
-            <Header />
+        <div>
+            <Header2 />
             <h1>Brainy Actz</h1>
-            <h2>Please Sign In</h2>
+            <h2>Content Management System</h2>
+            <h1>Please Sign In</h1>
             <input type="text" name="" id="" placeholder="Enter Your User Id" />
             <input type="password" name="" id="" placeholder="Enter Your Password" />
 

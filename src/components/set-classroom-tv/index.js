@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default () => {
     return (
-        <div className="set-classroom-tv">
+        <div>
             <Header2 />
             <h1>Set Classroom TV</h1>
             <h2>CURRENT THEME IS: <span className="white">THE LEGACY</span></h2>
@@ -17,6 +17,7 @@ export default () => {
                 <div className="white spacing">ARROW TAG</div>
                 <div className="white spacing">SUCCULENTS PLANT WORKSHOPS</div>
                 <div className="white spacing">NERF WARS</div>
+                <div className="yellow spacing">ACTIVITY LIST PANEL</div>
             </div>
             <Link to='/classrooms' className="heading-links"><div className="add-btn">BACK</div></Link>
         </div>

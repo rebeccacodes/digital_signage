@@ -5,28 +5,38 @@ import { Link } from 'react-router-dom';
 export default () => {
     return (
         <div className="navbar">
-            <Link to='/welcome'>HOME</Link>
+            <div className="dropdown">
+                <button className="dropbtn">LOCATIONS
+                    <i className="fa fa-caret-down"></i>
+                </button>
+                <div className="dropdown-content">
+                    <Link to='/welcome'>RENO</Link>
+                    <Link to='/welcome'>IRVINE</Link>
+                    <Link to='/welcome'>LAKE FOREST</Link>
+                </div >
+            </div >
             <div className="dropdown">
                 <button className="dropbtn">LOBBY
                     <i className="fa fa-caret-down"></i>
                 </button>
                 <div className="dropdown-content">
-                    <Link to='/lobby'>LOBBY MAIN</Link>
-                    <Link to='/lobby-boards'>TEXT BOARDS</Link>
-                    <Link to='/teasers'>ESCAPE ROOM TEASERS</Link>
+                    <Link to='/lobby-tv'>LOBBY TV</Link>
+                    <Link to='/lobby'>LOBBY BOARDS</Link>
+
                 </div >
             </div >
-            <Link to='/classrooms'>CLASSROOMS</Link>
             <div className="dropdown">
-                <button className="dropbtn">TVs
+                <button className="dropbtn">CLASSROOM
                     <i className="fa fa-caret-down"></i>
                 </button>
                 <div className="dropdown-content">
-                    <Link to='/lobby-tv'>LOBBY TV</Link>
                     <Link to='/classroom-tv'>CLASSROOM TV</Link>
+                    <Link to='/classrooms'>CLASSROOM BOARDS</Link>
+
                 </div >
             </div >
-            <Link to='/'>LOGOUT</Link>
+
+            <Link to='/login'>LOGIN</Link>
         </div >
     )
 }

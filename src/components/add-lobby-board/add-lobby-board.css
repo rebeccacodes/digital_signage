@@ -1,5 +1,32 @@
-.add-lobby-board {
-    text-align: center;
+
+.panel {
+    width: 42%;
+    margin: 5% 2%;
+    padding: 2%;
+    display: inline-block;
+    background-color: black;
+    vertical-align: top;
+}
+
+input[type="text"].panel-forms{
     width: 95%;
-    margin: 0 auto;
+}
+
+input[type="textarea"].panel-forms{
+    width: 95%;
+}
+
+.lobby-btn {
+    border: none;
+    color: black;
+    background-color: #d8f800;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-decoration: none;
+    text-align: center;
+    margin: 2%;
+    cursor: pointer;
+    min-width: 40%; 
 }
