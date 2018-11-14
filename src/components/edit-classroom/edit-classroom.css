@@ -1,0 +1,16 @@
+
+.classroom-panel {
+  width: 80%;
+  padding: 2%;
+  background-color: black;
+  vertical-align: top;
+  margin: 0 auto;
+}
+
+input[type="text"].classroom-form{
+    width: 45%;
+}
+
+input[type="textarea"].classroom-form{
+    width: 45%;
+}
