@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './welcome.css';
 import Header2 from '../header2';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { location } from '../../actions/index';
 
 class Welcome extends Component {
     constructor(props) {
@@ -28,11 +30,13 @@ class Welcome extends Component {
     componentDidMount() {
         const location = this.parseParameters();
         this.setState({ location: location.location });
+        //this.props.location();
     }
     render() {
         return (
             <div>
                 <Header2 />
+                {/* will need to change out this.state.location to this.props.location */}
                 <h1>Welcome BRAINY ACTZ <span className="city">{this.state.location}</span></h1>
                 <div className="boards">
                     <div className="outer">
@@ -51,4 +55,10 @@ class Welcome extends Component {
     }
 }
 
-export default Welcome;
+function mapStateToProps(state) {
+    return {
+        location: state.location.location
+    }
+}
+
+export default connect(mapStateToProps, { location: location })(Welcome);
