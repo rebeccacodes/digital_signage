@@ -6,7 +6,7 @@ export default () => {
     return (
         <div>
             <h1>classroom-tv</h1>
-            <Link to='/classrooms' className="heading-links"><div className="add-btn inline-block">BACK TO CLASSROOM</div></Link>
+            <Link to='/classroom' className="heading-links"><div className="add-btn inline-block">BACK TO CLASSROOM</div></Link>
         </div>
     )
 }
