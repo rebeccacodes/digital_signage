@@ -41,16 +41,18 @@ class Welcome extends Component {
                 <div className="boards">
                     <div className="outer">
                         <div className="center">
-                            <Link to='/lobby' className="heading-links"><h2>Lobby Boards</h2></Link>
+                            <Link to='/lobby-tv' className="heading-links"><h2>View Lobby TV</h2></Link>
+                            <Link to='/lobby' className="heading-links"><h2>Edit Lobby Board</h2></Link>
                         </div>
                     </div>
                     <div className="outer">
                         <div className="center">
-                            <Link to='/classrooms' className="heading-links"><h2>Classroom Boards</h2></Link>
+                            <Link to='/classroom-tv' className="heading-links"><h2>View Classroom TV</h2></Link>
+                            <Link to='/classroom' className="heading-links"><h2>Edit Classroom Board</h2></Link>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         )
     }
 }

@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/home';
 import Login from './components/login';
 import Welcome from './components/welcome';
-import Classrooms from './components/classrooms';
+import Classroom from './components/classroom';
 import Lobby from './components/lobby';
 import AddClassroom from './components/add-classroom';
 import SetLobbyTV from './components/set-lobby-tv';
@@ -14,7 +14,9 @@ import ClassroomTV from './components/classroom-tv';
 import NewLobbyBoard from './components/add-lobby-board';
 import EditLobbyBoard from './components/edit-lobby-board';
 import EditDefaultBoard from './components/edit-default-board';
-import EditClassroom from './components/edit-classroom';
+import EditActivity from './components/edit-activity';
+import CreateActivityPanel from './components/create-activity-panel';
+import ActivityPanels from './components/activity-panels';
 
 
 
@@ -27,7 +29,7 @@ class App extends Component {
             <Route exact path='/' component={Home} />
             <Route path='/login' component={Login} />
             <Route path='/welcome' component={Welcome} />
-            <Route path='/classrooms' component={Classrooms} />
+            <Route path='/classroom' component={Classroom} />
             <Route path='/lobby' component={Lobby} />
             <Route path='/new-classroom' component={AddClassroom} />
             <Route path='/set-lobby-tv' component={SetLobbyTV} />
@@ -37,7 +39,9 @@ class App extends Component {
             <Route path='/new-lobby-board' component={NewLobbyBoard} />
             <Route path='/edit-lobby-board' component={EditLobbyBoard} />
             <Route path='/edit-default-board' component={EditDefaultBoard} />
-            <Route path='/edit-classroom' component={EditClassroom} />
+            <Route path='/edit-activity' component={EditActivity} />
+            <Route path='/create-activity-panels' component={CreateActivityPanel} />
+            <Route path='/activity-panels' component={ActivityPanels} />
           </Switch>
         </div>
       </div>

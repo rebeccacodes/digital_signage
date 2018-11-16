@@ -21,7 +21,7 @@ export default () => {
                 </button>
                 <div className="dropdown-content">
                     <Link to='/lobby-tv'>LOBBY TV</Link>
-                    <Link to='/lobby'>LOBBY BOARDS</Link>
+                    <Link to='/lobby'>LOBBY BOARD</Link>
 
                 </div >
             </div >
@@ -31,7 +31,18 @@ export default () => {
                 </button>
                 <div className="dropdown-content">
                     <Link to='/classroom-tv'>CLASSROOM TV</Link>
-                    <Link to='/classrooms'>CLASSROOM BOARDS</Link>
+                    <Link to='/classroom'>CLASSROOM BOARD</Link>
+
+                </div >
+            </div >
+            <div className="dropdown">
+                <button className="dropbtn">PANELS
+                    <i className="fa fa-caret-down"></i>
+                </button>
+                <div className="dropdown-content">
+                    <Link to='/welcome-panels'>WELCOME PANELS</Link>
+                    <Link to='/activity-panels'>ACTIVITY PANELS</Link>
+                    <Link to='/activity-list'>ACTIVITY LIST</Link>
 
                 </div >
             </div >

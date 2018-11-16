@@ -1,25 +1,18 @@
-  .lobby-links {
-      margin: 0 4% 4% 4%;
-  }
 
-  .lobby-board {
+.activity {
+    vertical-align: top;
     display: inline-block;
     width: 25%;
     min-height: 25vh;
     background-color: black;
     color: white;
     margin: 2%;
-    vertical-align: top;
 }
 
-.edit-lobby, .delete-lobby {
+.edit-activity, .delete-activity {
     color: #d8f800;
     font-weight: 600;
     float: right;
     margin-right: 2%;
     margin-bottom: 2%;
-}
-
-.active {
-    border: 5px solid white;
 }

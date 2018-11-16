@@ -1,5 +1,5 @@
 import React from 'react';
-import './edit-classroom.css';
+import './edit-activity.css';
 import Header2 from '../header2';
 import { Link } from 'react-router-dom';
 
@@ -7,10 +7,10 @@ export default () => {
     return (
         <div>
             <Header2 />
-            <h1>Edit Classroom</h1>
+            <h1 className="remove-margin">Edit Activity</h1>
             <div className="classroom-panel">
                 <form>
-                    <h2>Update Classroom Panel</h2>
+
                     <label>Activity Title</label>
                     <input type="text" className='classroom-form' value="The Legacy" name="title" id="title" />
                     <label>Activity Description</label>
@@ -24,8 +24,8 @@ export default () => {
                     <label>Image Link</label>
                     <input type="text" className='classroom-form inline-block' value='image link info' name="image-link" id="image-link" />
                     <div className="right">
-                        <Link to="/classrooms" className='lobby-btn'>BACK</Link>
-                        <button className='lobby-btn'>UPDATE CLASSROOM</button>
+                        <Link to="/activity-panels" className='lobby-btn'>CANCEL</Link>
+                        <button className='lobby-btn'>UPDATE</button>
 
                     </div>
                 </form>

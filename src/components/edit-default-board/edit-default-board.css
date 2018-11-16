@@ -1,4 +1,5 @@
-.default-activity {
-    border: 1px solid #d8f800;
-    margin: 2%;
+.text-div {
+    color: white;
+    font-size: 20px;
+    padding: 2%;
 }
