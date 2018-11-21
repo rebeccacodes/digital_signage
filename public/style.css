@@ -157,3 +157,11 @@ label {
 
 }
 
+input[type="text"].panel-forms{
+    width: 95%;
+}
+
+input[type="textarea"].panel-forms{
+    width: 95%;
+}
+

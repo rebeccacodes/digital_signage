@@ -6,17 +6,17 @@ import Login from './components/login';
 import Welcome from './components/welcome';
 import Classroom from './components/classroom';
 import Lobby from './components/lobby';
-import AddClassroom from './components/add-classroom';
 import SetLobbyTV from './components/set-lobby-tv';
 import SetClassroomTV from './components/set-classroom-tv';
 import LobbyTV from './components/lobby-tv';
 import ClassroomTV from './components/classroom-tv';
-import NewLobbyBoard from './components/add-lobby-board';
 import EditLobbyBoard from './components/edit-lobby-board';
 import EditDefaultBoard from './components/edit-default-board';
 import EditActivity from './components/edit-activity';
 import CreateActivityPanel from './components/create-activity-panel';
 import ActivityPanels from './components/activity-panels';
+import WelcomePanels from './components/welcome-panels';
+import CreateWelcomePanel from './components/create-welcome-panel';
 
 
 
@@ -31,17 +31,17 @@ class App extends Component {
             <Route path='/welcome' component={Welcome} />
             <Route path='/classroom' component={Classroom} />
             <Route path='/lobby' component={Lobby} />
-            <Route path='/new-classroom' component={AddClassroom} />
             <Route path='/set-lobby-tv' component={SetLobbyTV} />
             <Route path='/set-classroom-tv' component={SetClassroomTV} />
             <Route path='/lobby-tv' component={LobbyTV} />
             <Route path='/classroom-tv' component={ClassroomTV} />
-            <Route path='/new-lobby-board' component={NewLobbyBoard} />
             <Route path='/edit-lobby-board' component={EditLobbyBoard} />
             <Route path='/edit-default-board' component={EditDefaultBoard} />
             <Route path='/edit-activity' component={EditActivity} />
             <Route path='/create-activity-panels' component={CreateActivityPanel} />
             <Route path='/activity-panels' component={ActivityPanels} />
+            <Route path='/welcome-panels' component={WelcomePanels} />
+            <Route path='/create-welcome-panel' component={CreateWelcomePanel} />
           </Switch>
         </div>
       </div>

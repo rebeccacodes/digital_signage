@@ -7,12 +7,13 @@ export default () => {
     return (
         <div>
             <Header2 />
-            <h1>Classroom</h1>
-            <h2>Click on the panels to change what is displayed</h2>
+            <h1 className="remove-margin">Classroom</h1>
             <div className="right">
                 <Link to='/classroom-tv' className="add-btn">VIEW CLASSROOM TV</Link>
                 <Link to="/welcome" className='lobby-btn'>BACK</Link></div>
             <div>
+                <h2>Click on the panels to change what is displayed</h2>
+
 
                 <div className="panel">
                     <form>
