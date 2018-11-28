@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './welcome.css';
 import Header2 from '../header2';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { location } from '../../actions/index';
+import base from '../../base';
 
 class Welcome extends Component {
     constructor(props) {
@@ -28,15 +27,20 @@ class Welcome extends Component {
     }
 
     componentDidMount() {
+        console.log('this.props.match: ', this.props.match);
         const location = this.parseParameters();
         this.setState({ location: location.location });
-        //this.props.location();
+        //ref in firebase is reference to piece of data in firebase
+        //this.ref = base.syncState(`location/${location}`);
+
     }
+
+
     render() {
         return (
             <div>
                 <Header2 />
-                {/* will need to change out this.state.location to this.props.location */}
+
                 <h1>Welcome BRAINY ACTZ <span className="city">{this.state.location}</span></h1>
                 <div className="boards">
                     <div className="outer">
@@ -57,10 +61,4 @@ class Welcome extends Component {
     }
 }
 
-function mapStateToProps(state) {
-    return {
-        location: state.location.location
-    }
-}
-
-export default connect(mapStateToProps, { location: location })(Welcome);
+export default Welcome;

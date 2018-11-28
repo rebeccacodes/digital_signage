@@ -3,6 +3,8 @@ import './home.css';
 import Header from '../header';
 import { Link } from 'react-router-dom';
 
+
+
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -13,6 +15,8 @@ class Home extends Component {
 
         this.handleChange = this.handleChange.bind(this);
     }
+
+
 
     handleChange(event) {
         this.setState({ location: event.target.value });
