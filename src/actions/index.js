@@ -5,6 +5,7 @@ import types from './types';
 export function location() {
 
     return {
-        type: types.LOCATION
+        type: types.LOCATION,
+        location
     }
 }
