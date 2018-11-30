@@ -3,7 +3,8 @@ import './lobby.css';
 import Header2 from '../header2';
 import { Link } from 'react-router-dom';
 
-export default () => {
+export default (props) => {
+    console.log('props in lobby: ', props);
     return (
 
         <div>

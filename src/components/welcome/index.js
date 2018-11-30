@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './welcome.css';
 import Header2 from '../header2';
 import { Link } from 'react-router-dom';
-import base from '../../base';
+import fb from '../../base';
 
 class Welcome extends Component {
     constructor(props) {
@@ -12,29 +12,21 @@ class Welcome extends Component {
         }
 
     }
-    parseParameters() {
-        var queryObject = {};
-        var pair = null;
-        var sPageURL = window.location.search.substring(1);
-        var qArr = sPageURL.split('&');
-
-        for (var i = 0; i < qArr.length; i++) {
-
-            pair = qArr[i].split('=');
-            queryObject[pair[0]] = pair[1];
-        }
-        return queryObject;
-    }
 
     componentDidMount() {
-        console.log('this.props.match: ', this.props.match);
-        const location = this.parseParameters();
-        this.setState({ location: location.location });
-        //ref in firebase is reference to piece of data in firebase
-        //this.ref = base.syncState(`location/${location}`);
-
+        this.getCity();
     }
 
+    async getCity() {
+        const city = this.props.match.params.location;
+        const city_name = fb.ref(`location/${city}/city_name`);
+        const location = await city_name.once('value').then((snapshot) => {
+            return snapshot.val();
+        });
+
+        this.setState({ location: location });
+
+    };
 
     render() {
         return (
