@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './home.css';
 import Header from '../header';
 import { Link } from 'react-router-dom';
-
-
 
 class Home extends Component {
     constructor(props) {
@@ -16,33 +14,31 @@ class Home extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-
-
     handleChange(event) {
         this.setState({ location: event.target.value });
     }
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.history.push(`/welcome?location=${this.state.location}`);
+        this.props.history.push(`/welcome/${this.state.location}`);
     }
 
     render() {
         return (
-            <div>
+            <Fragment>
                 <Header />
                 <h1>Welcome to Brainy Actz</h1>
                 <h2>Content Management System</h2>
-                <select name="location" value={this.state.location} onChange={this.handleChange}>
-                    <option value="null">Choose Your Location</option>
-                    <option value="Irvine">Irvine</option>
-                    <option value="LakeForest">Lake Forest</option>
-                    <option value="Reno">Reno</option>
+                <select required name="location" onChange={this.handleChange}>
+                    <option value="">Choose Your Location</option>
+                    <option value="irvine">Irvine</option>
+                    <option value="lakeforest">Lake Forest</option>
+                    <option value="reno">Reno</option>
                 </select>
 
                 <Link to="/welcome"> <input className="go" type="submit" value="GO" onClick={(event) => { this.handleSubmit(event) }} /></Link>
 
-            </div >
+            </Fragment>
         )
     }
 

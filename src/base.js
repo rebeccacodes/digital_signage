@@ -1,7 +1,7 @@
 import Rebase from 're-base';
 import firebase from 'firebase';
 
-const firebaseApp = firebase.initializeApp({
+const fb = firebase.initializeApp({
 
     apiKey: "AIzaSyB7Qry5-W7TVBKIzSD9YHDl93vqvzQtw5Y",
     authDomain: "brainyactz-digital-signage.firebaseapp.com",
@@ -12,8 +12,14 @@ const firebaseApp = firebase.initializeApp({
 
 });
 
-const base = Rebase.createClass(firebaseApp.database());
+const base = Rebase.createClass(fb.database());
 
-export { firebaseApp };
+//const location_db = firebase.database().ref('location');
 
-export default base;
+
+//export { location_db };
+
+export { base };
+
+export default fb.database();
+
