@@ -3,12 +3,14 @@ import './welcome.css';
 import Header2 from '../header2';
 import { Link } from 'react-router-dom';
 import fb from '../../base';
+import { connect } from 'react-redux';
 
 class Welcome extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            location: ''
+            location: '',
+            location_name: ''
         }
 
     }
@@ -24,7 +26,10 @@ class Welcome extends Component {
             return snapshot.val();
         });
 
-        this.setState({ location: location });
+        this.setState({
+            location_name: location,
+            location: city
+        });
 
     };
 
@@ -33,7 +38,7 @@ class Welcome extends Component {
             <div>
                 <Header2 />
 
-                <h1>Welcome BRAINY ACTZ <span className="city">{this.state.location}</span></h1>
+                <h1>Welcome BRAINY ACTZ <span className="city">{this.state.location_name}</span></h1>
                 <div className="boards">
                     <div className="outer">
                         <div className="center">
