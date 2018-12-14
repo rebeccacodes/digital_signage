@@ -10,9 +10,9 @@ export default () => {
                     <i className="fa fa-caret-down"></i>
                 </button>
                 <div className="dropdown-content">
-                    <Link to='/welcome'>RENO</Link>
-                    <Link to='/welcome'>IRVINE</Link>
-                    <Link to='/welcome'>LAKE FOREST</Link>
+                    <Link to='/welcome/reno'>RENO</Link>
+                    <Link to='/welcome/irvine'>IRVINE</Link>
+
                 </div >
             </div >
             <div className="dropdown">

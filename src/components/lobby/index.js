@@ -2,9 +2,9 @@ import React from 'react';
 import './lobby.css';
 import Header2 from '../header2';
 import { Link } from 'react-router-dom';
+import LobbyBoard from '../lobby-board';
 
 export default (props) => {
-    console.log('props in lobby: ', props);
     return (
 
         <div>
@@ -17,29 +17,7 @@ export default (props) => {
             <h2>Select Lobby Display</h2>
             <h4>Current Display Highlighted in White</h4>
 
-
-            <div className="view">
-                <div className="lobby-board active">
-
-                    <h3>Default Board</h3>
-                    <h4>Default Info</h4>
-                    <h3>Today's Schedule</h3>
-                    <h4>12pm - 1:30pm : Lunch</h4>
-                    <h4>2pm - 3pm : The Legacy</h4>
-                    <Link to='/edit-default-board'><div className="edit-lobby">EDIT</div></Link>
-                </div>
-                <div className="lobby-board">
-                    <h3>Pacific Life</h3>
-                    <h4>Team Building Day</h4>
-                    <h3>Today's Schedule</h3>
-                    <h4>12pm - 1:30pm : Lunch</h4>
-                    <h4>2pm - 3pm : The Legacy</h4>
-                    <Link to='/edit-lobby-board'><div className="edit-lobby">EDIT</div></Link>
-                </div>
-
-
-            </div>
-
+            <LobbyBoard />
 
         </div>
     )
