@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './lobby-tv.css';
-import { Link } from 'react-router-dom';
 import Header2 from '../header2';
 import YouTube from 'react-youtube';
 
@@ -24,7 +23,7 @@ class LobbyTV extends Component {
         return (
             <div>
                 <Header2 />
-                <h1>lobby-tv</h1>
+                <h1>Lobby TV</h1>
 
                 <YouTube
                     videoId="eSYR9iVcGOk"
